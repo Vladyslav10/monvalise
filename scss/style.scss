@@ -1,0 +1,302 @@
+//////////////////////////HEADER///////////////////////////////////////
+.header {
+    position: relative;
+    &::after {
+        content: "";
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        width: 100%;
+        height: 1px;
+        background-color: #e0e3e3;
+    }
+    &__top {
+        display: flex;
+        align-items: center;
+        max-height: 44px;
+        background-color: #cbdcff;
+        justify-content: center;
+        padding: 6px 0px;
+    }
+
+    &__image {
+        height: 28px;
+        width: 30px;
+        & > img {
+            max-width: 100%;
+            max-height: 100%;
+            overflow: hidden;
+        }
+    }
+
+    &__text {
+        color: #0f1a34;
+        font-size: 1rem;
+        line-height: 1.5;
+    }
+
+    &__row {
+        display: flex;
+        align-items: center;
+        padding: 23px 0px;
+        position: relative;
+        &::after {
+            content: "";
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 100%;
+            height: 1px;
+            background-color: #e0e3e3;
+        }
+    }
+
+    &__logo {
+        max-width: 150px;
+        max-height: 21px;
+        margin: 0px 10px 0px 0px;
+        & > img {
+            width: 100%;
+            height: 100%;
+            overflow: hidden;
+        }
+    }
+
+    &__input {
+        margin: 0px 24px 0px auto;
+        flex: 0 1 55%;
+        border: 1px solid #e0e3e3;
+        border-radius: 4px;
+        padding: 11px 10px 11px 52px;
+        //max-width: 450px;
+        position: relative;
+        & > input {
+            width: 100%;
+        }
+        & > button {
+            position: absolute;
+            top: 50%;
+            left: 20px;
+            transform: translateY(-50%);
+            width: 20px;
+            height: 20px;
+            background-color: transparent;
+        }
+    }
+
+    &__buttons {
+        display: flex;
+        align-items: center;
+        & > *:not(:last-child) {
+            margin: 0px 24px 0px 0px;
+        }
+    }
+
+    &__button {
+        & > button {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 12px;
+            padding: 10px 20px;
+            min-width: 128px;
+            white-space: nowrap;
+            line-height: 1.5;
+            background-color: #2d3132;
+            color: #ffffff;
+            transition: all 0.4s ease 0s;
+            &:hover {
+                background-color: #070a11;
+            }
+        }
+    }
+
+    &__language {
+        width: 40px;
+    }
+
+    &__pages {
+        display: flex;
+        align-items: center;
+        padding: 6px 0px;
+        min-width: 162px;
+        & > *:not(:last-child) {
+            margin: 0px 23px 0px 0px;
+        }
+    }
+
+    &__page-profile {
+        width: 32px;
+        height: 32px;
+        & > img {
+            width: 100%;
+            height: 100%;
+            overflow: hidden;
+        }
+    }
+
+    &__link {
+        width: 21px;
+        height: 19px;
+        & > svg {
+            width: 100%;
+            height: 100%;
+            overflow: hidden;
+        }
+    }
+
+    &__nav {
+        overflow: auto;
+    }
+}
+.list {
+    display: flex;
+    align-items: center;
+
+    &__link {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 16px;
+        font-size: 13px;
+        white-space: nowrap;
+        letter-spacing: 0.4px;
+        color: #444748;
+        line-height: 1.5;
+        position: relative;
+        transition: all 0.3s ease 0s;
+        &:hover {
+            &::after {
+                content: "";
+                position: absolute;
+                bottom: 0;
+                left: 0;
+                width: 100%;
+                height: 2px;
+                background-color: #2d3132;
+            }
+        }
+    }
+}
+////////////////MAIN////////////////////////////////////////////////
+////////////////FOOTER////////////////////////////////////////////////
+.footer {
+    background-color: #eff1f1;
+    &__row {
+        display: flex;
+        padding: 72px 0px;
+        @media (max-width: 1024px) {
+            padding: 30px 0px;
+            flex-direction: column;
+        }
+        @media (max-width: 768px) {
+            padding: 30px 0px;
+            flex-direction: column-reverse;
+        }
+    }
+
+    &__menu {
+        flex: 0 1 75%;
+        @media (max-width: 1024px) {
+            margin: 0px 0px 20px 0px;
+        }
+        @media (max-width: 768px) {
+            margin: 0px 0px 0px 0px;
+        }
+    }
+
+    &__download {
+        @media (max-width: 768px) {
+            margin: 0px 0px 20px 0px;
+        }
+    }
+
+    &__title {
+        line-height: 1.5;
+        margin: 0px 0px 0.85em 0px;
+    }
+
+    &__link {
+        width: 9.1rem;
+        height: 2.75rem;
+        display: flex;
+        & > .footer__market,
+        .footer__market > img {
+            width: 100%;
+            height: 100%;
+            overflow: hidden;
+        }
+    }
+
+    &__copyright {
+        padding: 38px 0px;
+        position: relative;
+        &::before {
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 1px;
+            background-color: #c4c7c7;
+        }
+        @media (max-width: 768px){
+            padding: 20px 0px;
+        }
+    }
+}
+.menu-footer {
+    display: flex;
+    @media (max-width: 768px) {
+        display: block;
+    }
+    &__column {
+        flex: 1 1 33.333%;
+        &:not(:last-child) {
+            margin: 0px 24px 0px 0px;
+        }
+    }
+
+    &__btn {
+        display: none;
+        @media (max-width: 768px) {
+            display: block;
+            margin: 0px 0px 10px 0px;
+            font-size: 16px;
+            position: relative;
+            &::after {
+                content: url("../img/icons/arrow.svg");
+                position: absolute;
+                top: 0px;
+                right: -20px;
+                width: 15px;
+                height: 15px;
+                object-fit: cover;
+            }
+        }
+        &._active ~ .menu-footer__list {
+            padding: 0px 0px 10px 0px;
+        }
+    }
+
+    &__link {
+        color: #2d3132;
+        line-height: 1.5;
+        &:hover {
+            text-decoration: underline;
+        }
+        &:not(:last-child) {
+            margin: 0px 0px 12px 0px;
+        }
+    }
+}
+
+////////////////QUERY////////////////////////////////////////////////
+
+@media (max-width: 480px) {
+    .header {
+        &__image {
+            display: none;
+        }
+    }
+}

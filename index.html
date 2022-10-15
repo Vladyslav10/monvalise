@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="uk">    
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap-utilities.min.css">
+    <link rel="stylesheet" href="css/index.css" />
+    <link rel="stylesheet" href="css/style.css" />
+    <title>Monvalise</title>
+  </head>
+  <body>
+    <div class="wrapper">
+      <header class="header">
+        <div class="header__top">
+          <div class="header__image">
+            <img src="img/header/like.png" alt="icon like" />
+          </div>
+          <div class="header__image">
+            <img src="img/header/dress.png" alt="blue dress" />
+          </div>
+          <p class="header__text">Брендовий верхній одяг від 899 грн</p>
+        </div>
+        <div class="header__container container">
+          <div class="header__row">
+            <div class="header__logo">
+              <img src="img/header/logo.png" alt="monvalise logotype" />
+            </div>
+            <div class="header__input">
+              <input type="text" placeholder="Знайти речі або бренди" />
+              <button aria-label="search-button" type='button'>
+                <svg
+                  width="18"
+                  height="18"
+                  viewBox="0 0 18 18"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    fill-rule="evenodd"
+                    clip-rule="evenodd"
+                    d="M12.8481 14.0265C11.565 15.0529 9.93751 15.6666 8.16666 15.6666C4.02453 15.6666 0.666664 12.3088 0.666664 8.16663C0.666664 4.02449 4.02453 0.666626 8.16666 0.666626C12.3088 0.666626 15.6667 4.02449 15.6667 8.16663C15.6667 9.93747 15.0529 11.565 14.0266 12.848L17.0893 15.9107L15.9108 17.0892L12.8481 14.0265ZM14 8.16663C14 11.3883 11.3883 14 8.16666 14C4.945 14 2.33333 11.3883 2.33333 8.16663C2.33333 4.94497 4.945 2.33329 8.16666 2.33329C11.3883 2.33329 14 4.94497 14 8.16663Z"
+                    fill="#5C5F60"
+                  />
+                </svg>
+              </button>
+            </div>
+            <div class="header__buttons">
+              <div class="header__button">
+                <button type="button">Додати товар</button>
+              </div>
+              <div class="header__language">
+                  <select name="" id="languages">
+                      <option selected value="Укр">Укр</option>
+                  </select>
+              </div>
+              <div class="header__pages">
+                <div class="header__page">
+                  <a href="#liked" aria-label="page with liked ware" class="header__link">
+                    <svg
+                      width="21"
+                      height="19"
+                      viewBox="0 0 21 19"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        fill-rule="evenodd"
+                        clip-rule="evenodd"
+                        d="M10.2426 1.75736C12.5858 -0.585787 16.3848 -0.585787 18.7279 1.75736C21.0711 4.10051 21.0711 7.89949 18.7279 10.2426L10.2426 18.728L1.75736 10.2427C-0.585787 7.89953 -0.585786 4.10054 1.75736 1.75739C4.1005 -0.585744 7.89947 -0.58576 10.2426 1.75736ZM17.3137 3.17158C15.7516 1.60948 13.2189 1.60947 11.6568 3.17157L10.2426 4.58579L8.82843 3.17161C7.26633 1.60951 4.73367 1.60951 3.17157 3.17161C1.60948 4.7337 1.60948 7.26636 3.17157 8.82846L10.2426 15.8995L17.3137 8.82843C18.8758 7.26633 18.8758 4.73367 17.3137 3.17158Z"
+                        fill="#2D3132"
+                      />
+                    </svg>
+                  </a>
+                </div>
+                <div class="header__page">
+                  <a href="#message" aria-label="page with yours chat"  class="header__link">
+                    <svg
+                      width="20"
+                      height="19"
+                      viewBox="0 0 20 19"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        d="M15 6C15 6.55228 14.5523 7 14 7H6C5.44772 7 5 6.55228 5 6C5 5.44772 5.44772 5 6 5H14C14.5523 5 15 5.44772 15 6Z"
+                        fill="#2D3132"
+                      />
+                      <path
+                        d="M5 10C5 10.5523 5.44772 11 6 11H14C14.5523 11 15 10.5523 15 10C15 9.44772 14.5523 9 14 9H6C5.44772 9 5 9.44772 5 10Z"
+                        fill="#2D3132"
+                      />
+                      <path
+                        fill-rule="evenodd"
+                        clip-rule="evenodd"
+                        d="M4 0C1.79086 0 0 1.79086 0 4V16C0 17.8811 1.93624 19.1395 3.65525 18.3754L8.2243 16.3448C8.73574 16.1174 9.28918 16 9.84886 16H16C18.2091 16 20 14.2091 20 12V4C20 1.79086 18.2091 0 16 0H4ZM16 2H4C2.89543 2 2 2.89543 2 4V16C2 16.4338 2.44653 16.724 2.84297 16.5478L7.41203 14.5171C8.17918 14.1762 9.00935 14 9.84886 14H16C17.1046 14 18 13.1046 18 12V4C18 2.89543 17.1046 2 16 2Z"
+                        fill="#2D3132"
+                      />
+                    </svg>
+                  </a>
+                </div>
+                <div class="header__page header__page-profile">
+                  <a href="#shop" aria-label="shop page" class="header__link">
+                    <svg
+                      width="20"
+                      height="19"
+                      viewBox="0 0 20 19"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        fill-rule="evenodd"
+                        clip-rule="evenodd"
+                        d="M2.79797 2H0V0H4.44013L5.07398 3.19462C5.16705 3.6625 5.57777 4 6.05486 4H16.114C18.2086 4 19.6585 6.09212 18.923 8.05337L17.423 12.0534C16.9839 13.2243 15.8645 14 14.614 14H9.28432C6.89805 14 4.84434 12.3137 4.37993 9.97309L2.79797 2ZM5.62449 5.96918L6.34169 9.58386C6.62034 10.9882 7.85256 12 9.28432 12H14.614C15.0308 12 15.404 11.7414 15.5503 11.3511L17.0503 7.35112C17.2955 6.69737 16.8122 6 16.114 6H6.05486C5.90907 6 5.76535 5.98951 5.62449 5.96918Z"
+                        fill="#2D3132"
+                      />
+                      <path
+                        d="M8 17.5C8 18.3284 7.32843 19 6.5 19C5.67157 19 5 18.3284 5 17.5C5 16.6716 5.67157 16 6.5 16C7.32843 16 8 16.6716 8 17.5Z"
+                        fill="#2D3132"
+                      />
+                      <path
+                        d="M15.5 19C16.3284 19 17 18.3284 17 17.5C17 16.6716 16.3284 16 15.5 16C14.6716 16 14 16.6716 14 17.5C14 18.3284 14.6716 19 15.5 19Z"
+                        fill="#2D3132"
+                      />
+                    </svg>
+                  </a>
+                </div>
+                <div class="header__page">
+                  <a href="#my-page" class="header__link">
+                    <img src="img/header/avatar.png" alt="User avatar" />
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <nav class="header__nav">
+            <ul class="header__list list">
+              <li class="list"><a href="#" class="list__link">Головна</a></li>
+              <li class="list"><a href="#" class="list__link">Каталог</a></li>
+              <li class="list"><a href="#" class="list__link">Жінкам</a></li>
+              <li class="list"><a href="#" class="list__link">Чоловікам</a></li>
+              <li class="list">
+                <a href="#" class="list__link">Дитячі речі</a>
+              </li>
+              <li class="list"><a href="#" class="list__link">Аукціон</a></li>
+              <li class="list"><a href="#" class="list__link">Бренди</a></li>
+              <li class="list"><a href="#" class="list__link">Акції</a></li>
+              <li class="list">
+                <a href="#" class="list__link">Аутентифікація</a>
+              </li>
+              <li class="list"><a href="#" class="list__link">Блог</a></li>
+            </ul>
+          </nav>
+        </div>
+      </header>
+      <main class="main">
+        <div class="main__container"></div>
+      </main>
+      <footer class="footer">
+        <div class="footer__container container">
+          <div class="footer__row">
+            <div data-spollers="768,max" class="footer__menu menu-footer">
+              <div class="menu-footer__column">
+                <button type="button" data-spoller class="menu-footer__btn">Для покупців</button>
+                <ul class="menu-footer__list">
+                  <li><a href="#" class='menu-footer__link'>Довідка для покупців</a></li>
+                  <li><a href="#" class='menu-footer__link'>Отримати підтримку</a></li>
+                  <li><a href="#" class='menu-footer__link'>Як купувати</a></li>
+                  <li><a href="#" class='menu-footer__link'>Як залишити корисний відгук</a></li>
+                  <li><a href="#" class='menu-footer__link'>Програма Захисту Покупців</a></li>
+                  <li><a href="#" class='menu-footer__link'>Рекомендації з безпечних покупок</a></li>
+                </ul>
+              </div>
+              <div class="menu-footer__column">
+                <button type="button" data-spoller class="menu-footer__btn">Для продавців</button>
+                <ul class="menu-footer__list">
+                  <li><a href="#" class='menu-footer__link'>Довідка для покупців</a></li>
+                  <li><a href="#" class='menu-footer__link'>Як почати продавати</a></li>
+                  <li><a href="#" class='menu-footer__link'>Тарифи</a></li>
+                  <li><a href="#" class='menu-footer__link'>Угода користувача</a></li>
+                  <li><a href="#" class='menu-footer__link'>Політика конфіденційності</a></li>
+                  <li><a href="#" class='menu-footer__link'>Правила користування порталом</a></li>
+                  <li><a href="#" class='menu-footer__link'>Бонусна програма</a></li>
+                </ul>
+              </div>
+              <div class="menu-footer__column">
+                <button type="button" data-spoller class="menu-footer__btn">Про нас</button>
+                <ul class="menu-footer__list">
+                  <li><a href="#" class='menu-footer__link'>Про нас</a></li>
+                  <li><a href="#" class='menu-footer__link'>Довідка та FAQ</a></li>
+                  <li><a href="#" class='menu-footer__link'>Захист легальності контенту</a></li>
+                  <li><a href="#" class='menu-footer__link'>Адміністрація</a></li>
+                  <li><a href="#" class='menu-footer__link'>Вакансії</a></li>
+                </ul>
+              </div>
+            </div>
+            <div class="footer__download">
+              <h4 class='footer__title'>Мобільний додаток</h4>
+              <div class='footer__link'>
+                <a href="https://play.google.com/store/apps?hl=ru&gl=US" class='footer__market'><img src="img/google-play.png" alt="Icon google-play"></a>
+              </div>
+            </div>
+          </div>
+          <div class="footer__copyright">© 2022 Monvalise</div>
+        </div>
+      </footer>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="js/index.js"></script>
+  </body>
+</html>
