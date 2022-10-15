@@ -39,6 +39,10 @@ body {
     color: #2D3132;
 }
 
+body.lock {
+    overflow: hidden;
+}
+
 .wrapper {
 	min-height: 100%;
 	display: flex;
