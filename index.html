@@ -3,7 +3,8 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">    <link rel="stylesheet" href="css/index.css" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap-utilities.min.css" rel="stylesheet" />
+    <link rel="stylesheet" href="css/index.css" />
     <link rel="stylesheet" href="css/style.css" />
     <title>Monvalise</title>
   </head>
@@ -161,10 +162,15 @@
           <div class="main__route">Головна <span>/ Каталог одягу</span></div>
           <h2 class='main__title'>Каталог одягу</h2>
           <div class="main__row">
-            <div data-spollers="992,max" class="main__column main__column-filters column-main">
-              <button data-spoller class="column-main__button">Фільтри</button>
+            <div data-spollers="768,max" class="main__column main__column-filters column-main">
+              <button data-spoller class="column-main__button">
+                Фільтри
+                <svg width="18" height="11" viewBox="0 0 18 11" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path fill-rule="evenodd" clip-rule="evenodd" d="M0.292892 2.20712L1.70711 0.792908L9 8.0858L16.2929 0.792908L17.7071 2.20712L9 10.9142L0.292892 2.20712Z" fill="#747778"/>
+                </svg>
+              </button>
               <div>
-                <div data-spollers="992,min" class="column-main__filters">
+                <div data-spollers='320,min' class="column-main__filters">
                   <div class="column-main__filter">
                     <button type="button" data-spoller class="column-main__btn">Категорії 
                       <svg width="18" height="11" viewBox="0 0 18 11" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -211,19 +217,19 @@
                       <div class="form-check">
                         <input class="form-check-input" type="checkbox" value="" id="woman">
                         <label class="form-check-label" for="woman">
-                          Жінкам
+                          Жінкам<span></span>
                         </label>
                       </div>
                       <div class="form-check">
                         <input class="form-check-input" type="checkbox" value="" id="man">
                         <label class="form-check-label" for="man">
-                          Чоловікам
+                          Чоловікам<span></span>
                         </label>
                       </div>
                       <div class="form-check">
                         <input class="form-check-input" type="checkbox" value="" id="unisex">
                         <label class="form-check-label" for="unisex">
-                          Унісекс
+                          Унісекс<span></span>
                         </label>
                       </div>
                     </div>
@@ -285,6 +291,96 @@
                   <option value="expensive">Спочатку Найдорожчі</option>
                   <option value="date">За датою</option>
                 </select>
+              </div>
+              <div class='catalog-column__clothing'>
+                <article class='catalog-column__article'>
+                  <div class="catalog-column__img">
+                    <img src="img/ware/1.png" alt="Clothing">
+                  </div>
+                  <div class='catalog-column__character'>
+                    <div class='catalog-column__vogue'>ТОП</div>
+                    <h4 class='catalog-column__brand'>LOUIS VUITTON</h4>
+                    <h3 class='catalog-column__description'>Темно-сині джинси Louis Vuitton</h3>
+                    <div class='catalog-column__row'>
+                      <div class="catalog-column__column catalog-column__column-price">
+                        <div class='catalog-column__cost'>5 499 ₴</div>
+                        <div class='catalog-column__discount'>3 799 ₴</div>
+                      </div>
+                      <div class="catalog-column__column catalog-column__column-seller">
+                        <div class='catalog-column__location'>Херсон</div>
+                        <div class='catalog-column__name'>
+                          <img src="" alt="user avatar"> LoveBrand
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </article>
+                <article class='catalog-column__article'>
+                  <div class="catalog-column__img">
+                    <img src="img/ware/1.png" alt="Clothing">
+                  </div>
+                  <div class='catalog-column__character'>
+                    <div class='catalog-column__vogue'>ТОП</div>
+                    <h4 class='catalog-column__brand'>LOUIS VUITTON</h4>
+                    <h3 class='catalog-column__description'>Темно-сині джинси Louis Vuitton</h3>
+                    <div class='catalog-column__row'>
+                      <div class="catalog-column__column catalog-column__column-price">
+                        <div class='catalog-column__cost'>5 499 ₴</div>
+                        <div class='catalog-column__discount'>3 799 ₴</div>
+                      </div>
+                      <div class="catalog-column__column catalog-column__column-seller">
+                        <div class='catalog-column__location'>Херсон</div>
+                        <div class='catalog-column__name'>
+                          <img src="" alt="user avatar"> LoveBrand
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </article>
+                <article class='catalog-column__article'>
+                  <div class="catalog-column__img">
+                    <img src="img/ware/1.png" alt="Clothing">
+                  </div>
+                  <div class='catalog-column__character'>
+                    <div class='catalog-column__vogue'>ТОП</div>
+                    <h4 class='catalog-column__brand'>LOUIS VUITTON</h4>
+                    <h3 class='catalog-column__description'>Темно-сині джинси Louis Vuitton</h3>
+                    <div class='catalog-column__row'>
+                      <div class="catalog-column__column catalog-column__column-price">
+                        <div class='catalog-column__cost'>5 499 ₴</div>
+                        <div class='catalog-column__discount'>3 799 ₴</div>
+                      </div>
+                      <div class="catalog-column__column catalog-column__column-seller">
+                        <div class='catalog-column__location'>Херсон</div>
+                        <div class='catalog-column__name'>
+                          <img src="" alt="user avatar"> LoveBrand
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </article>
+                <article class='catalog-column__article'>
+                  <div class="catalog-column__img">
+                    <img src="img/ware/1.png" alt="Clothing">
+                  </div>
+                  <div class='catalog-column__character'>
+                    <div class='catalog-column__vogue'>ТОП</div>
+                    <h4 class='catalog-column__brand'>LOUIS VUITTON</h4>
+                    <h3 class='catalog-column__description'>Темно-сині джинси Louis Vuitton</h3>
+                    <div class='catalog-column__row'>
+                      <div class="catalog-column__column catalog-column__column-price">
+                        <div class='catalog-column__cost'>5 499 ₴</div>
+                        <div class='catalog-column__discount'>3 799 ₴</div>
+                      </div>
+                      <div class="catalog-column__column catalog-column__column-seller">
+                        <div class='catalog-column__location'>Херсон</div>
+                        <div class='catalog-column__name'>
+                          <img src="" alt="user avatar"> LoveBrand
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </article>
               </div>
             </div>
           </div>

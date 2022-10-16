@@ -147,7 +147,7 @@
     if (menu.hasClass('menu_open')) {
       menu.removeClass('menu_open');
       $(this).removeClass('active');
-      body.remeveClass('lock');
+      body.removeClass('lock');
     } else {
       menu.addClass('menu_open');
       body.addClass('lock');
@@ -155,7 +155,24 @@
     }
   });
 })();
+//========================================================================================================================================================
+//Links
+(function () {
+  const footerLinks = document.querySelectorAll('.menu-footer__link');
+  const headerLink = document.querySelectorAll('.list__link');
 
+  headerLink.forEach((el) => {
+    el.addEventListener('click', function (e) {
+      e.preventDefault();
+    });
+  });
+  footerLinks.forEach((el) => {
+    el.addEventListener('click', function (e) {
+      e.preventDefault();
+    });
+  });
+})();
+//========================================================================================================================================================
 //SlideToggle
 let _slideUp = (target, duration = 500) => {
   if (!target.classList.contains('_slide')) {
