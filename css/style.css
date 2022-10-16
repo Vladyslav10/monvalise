@@ -296,6 +296,36 @@
   }
 }
 
+.header__page {
+  position: relative;
+}
+
+.header__page > span {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  position: absolute;
+  top: -8px;
+  right: -7px;
+  font-size: 10px;
+  border-radius: 50%;
+  width: 14px;
+  height: 14px;
+  padding: 4px;
+  background-color: #EFF1F1;
+}
+
+.header__page > span.red {
+  background-color: #FF5449;
+  color: #FFFFFF;
+}
+
 .header__page-profile {
   width: 32px;
   height: 32px;
@@ -793,9 +823,22 @@
 }
 
 .form-check-label {
+  -webkit-box-flex: 1;
+      -ms-flex: 1 1 auto;
+          flex: 1 1 auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
   padding: 0px 0px 0px 16px;
   line-height: 1.5;
   color: #444748;
+}
+
+.form-check-label > span {
+  color: #747778;
 }
 
 .form-select {
