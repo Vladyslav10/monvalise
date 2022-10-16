@@ -158,15 +158,20 @@
 //========================================================================================================================================================
 //Links
 (function () {
-  const footerLinks = document.querySelectorAll('.menu-footer__link');
-  const headerLink = document.querySelectorAll('.list__link');
-
-  headerLink.forEach((el) => {
+  const footerLinkss = document.querySelectorAll('.menu-footer__link');
+  const headerLinks = document.querySelectorAll('.list__link');
+  const paginationLinks = document.querySelectorAll('.page-link');
+  headerLinks.forEach((el) => {
     el.addEventListener('click', function (e) {
       e.preventDefault();
     });
   });
-  footerLinks.forEach((el) => {
+  footerLinkss.forEach((el) => {
+    el.addEventListener('click', function (e) {
+      e.preventDefault();
+    });
+  });
+  paginationLinks.forEach((el) => {
     el.addEventListener('click', function (e) {
       e.preventDefault();
     });
