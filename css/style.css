@@ -329,12 +329,21 @@
 .header__page-profile {
   width: 32px;
   height: 32px;
+  position: relative;
 }
 
 .header__page-profile > a > img {
   width: 100%;
   height: 100%;
   overflow: hidden;
+}
+
+.header__page-profile > svg {
+  position: absolute;
+  top: 50%;
+  right: -13px;
+  -webkit-transform: translate(0, -50%);
+          transform: translate(0, -50%);
 }
 
 .header__link {
@@ -641,7 +650,7 @@
 
 .catalog-column__sorting::after {
   content: "";
-  z-index: 2;
+  z-index: 1;
   position: absolute;
   width: 1px;
   height: 100%;
@@ -663,6 +672,7 @@
       -ms-flex-pack: center;
           justify-content: center;
   gap: 24px;
+  -ms-grid-columns: (minmax(290px, 312px))[auto-fit];
       grid-template-columns: repeat(auto-fit, minmax(290px, 312px));
   margin: 0px 0px 56px 0px;
 }
